@@ -6,8 +6,8 @@ pipeline {
     }
     environment {
         RHT_OCP4_DEV_USER = 'ricardoalonsos'
-        DEPLOYMENT_CONFIG_STAGE = 'shopping-cart-stage'
-        DEPLOYMENT_CONFIG_PRODUCTION = 'shopping-cart-production'
+        DEPLOYMENT_CONFIG_STAGE = 'buzema-shopping-cart-stage'
+        DEPLOYMENT_CONFIG_PRODUCTION = 'buzema-shopping-cart-production'
     }
     stages {
         stage('Tests') {
