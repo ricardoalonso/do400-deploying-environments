@@ -28,7 +28,7 @@ public class ShoppingCartResource {
     @Consumes(APPLICATION_JSON)
     @Operation(summary = "Adds a product to the shopping cart")
     @APIResponse(responseCode = "200", content = @Content(mediaType = APPLICATION_JSON, schema = @Schema(implementation = CartView.class)))
-    @APIResponse(responseCode = "400", description = "Product not found in the catalog")
+    @APIResponse(responseCode = "400", description = "Product not found in the catalog database")
     public Response addToCart(AddToCartCommand request) {
         try {
             this.cartService.addProduct(request.id, request.quantity);
